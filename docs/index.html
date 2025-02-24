@@ -1,0 +1,48 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: url('background.webp') no-repeat center center/cover;
+        }
+        .container {
+            background: rgba(160, 221, 255, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Meeting Scheduler</h2>
+        
+        <select id="employee-country" required>
+            <option value="">Select Your City</option>
+        </select>
+
+        <form id="meeting-form">
+            <input type="text" id="title" placeholder="Meeting Title" required>
+            
+            <input type="datetime-local" id="time" required>
+            
+            <select id="country" required>
+                <option value="">Select Employer's Country</option>
+            </select>
+            <button type="submit">Add Meeting</button>
+        </form>
+
+        <h3>Scheduled Meetings</h3>
+        <ul id="meeting-list"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
