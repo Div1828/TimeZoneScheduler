@@ -1,0 +1,7 @@
+The project has three main files-
+
+index.html which is linked with style.css for styling and script.js for behaviour
+
+there is also webp file which is used as the background for our website
+
+All of these are stored in the docs folder which is used for publishing on github pages
